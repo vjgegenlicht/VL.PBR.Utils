@@ -792,7 +792,7 @@
                 <Choice Kind="TypeFlag" Name="Float32" />
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="BqQTnC48WiONZQIKG6FU5g" Name="WhiteOut" Kind="InputPin" DefaultValue="0.56">
+            <Pin Id="BqQTnC48WiONZQIKG6FU5g" Name="WhiteOut" Kind="InputPin" DefaultValue="0.55">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Float32" />
               </p:TypeAnnotation>

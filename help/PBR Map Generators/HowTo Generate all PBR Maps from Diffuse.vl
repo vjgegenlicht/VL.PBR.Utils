@@ -477,12 +477,12 @@
               <Choice Kind="ProcessAppFlag" Name="NormalFromDiffuse" />
             </p:NodeReference>
             <Pin Id="HRy4DVc3BdPQd3QEtiqkEF" Name="PBRTextures" Kind="InputPin" />
-            <Pin Id="OOGMpNVdcDQPIm6xQZIqXq" Name="A Depth" Kind="InputPin" DefaultValue="1.3">
+            <Pin Id="OOGMpNVdcDQPIm6xQZIqXq" Name="A Depth" Kind="InputPin" DefaultValue="1.2">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Float32" />
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="NSdGghH0vcOQF9RKWO6hpg" Name="Shape" Kind="InputPin" DefaultValue="1.13">
+            <Pin Id="NSdGghH0vcOQF9RKWO6hpg" Name="Shape" Kind="InputPin" DefaultValue="0.53">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Float32" />
               </p:TypeAnnotation>
@@ -505,8 +505,12 @@
               <Choice Kind="ProcessAppFlag" Name="PBRTextureWriter" />
             </p:NodeReference>
             <Pin Id="GKWoiVu7aUdNfKkid0jo3L" Name="PBRTextures" Kind="InputPin" />
-            <Pin Id="FhK8g9hZv5VONaGhqaTolm" Name="Path" Kind="InputPin" />
-            <Pin Id="MCF6dOqBve2PEQTSlcyvi2" Name="BaseName" Kind="InputPin" DefaultValue="NewName">
+            <Pin Id="FhK8g9hZv5VONaGhqaTolm" Name="Path" Kind="InputPin" DefaultValue="..\..\..\..\..\..\..\..\OneDrive\Dokumente\MyPBRTextures\">
+              <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Path" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="MCF6dOqBve2PEQTSlcyvi2" Name="BaseName" Kind="InputPin" DefaultValue="Test4">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
@@ -517,6 +521,7 @@
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="Sl2ilv7x3w9P0pFb9kwbou" Name="Write" Kind="InputPin" />
+            <Pin Id="NGJhYdFlPc9NzSfEtDCUlH" Name="CreateSubfolder" Kind="InputPin" />
           </Node>
           <Pad Id="ElXxE1skUvUNqbUvlawJYy" Comment="Write" Bounds="97,1333,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
@@ -973,6 +978,29 @@
             <Pin Id="Lr901CWbzQRObFjO7tZakR" Name="Input" Kind="StateInputPin" />
             <Pin Id="NcZs9G20hvaPjlQPM07JpX" Name="Parent" Kind="OutputPin" />
           </Node>
+          <Pad Id="RUvHDODVH6QK9zC9ZmMBSZ" Comment="BaseName" Bounds="45,1264,82,19" ShowValueBox="true" isIOBox="true" Value="GrassyTexture">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="MdpDVn8nPG1Lf3DUTs03Up" Comment="CreateSubfolder" Bounds="189,1342,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Gg3DOJl7BDwPl7n4jJaArM" Comment="Path" Bounds="15,1171,140,15" ShowValueBox="true" isIOBox="true" Value="..\..\..\..\..\..\..\..\OneDrive\Dokumente\MyPBRTextures\">
+            <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Path" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="S1UiyOm78AUOVAIqcrXh3c" Comment="FileFormat" Bounds="60,1307,55,15" ShowValueBox="true" isIOBox="true" Value="Png">
+            <p:TypeAnnotation LastCategoryFullName="Stride.Graphics" LastSymbolSource="Stride.dll">
+              <Choice Kind="TypeFlag" Name="ImageFileType" />
+            </p:TypeAnnotation>
+          </Pad>
         </Canvas>
         <Patch Id="IWJCDNyLXtYPEuITGl0s9B" Name="Create" />
         <Patch Id="QsaBtuORSLEOFrsel6DaUO" Name="Update" />
@@ -1039,6 +1067,10 @@
         <Link Id="BTJElZGT8rNMIL6oXzQCxY" Ids="HhegQlkQN1aNRdnksHCiwg,Lr901CWbzQRObFjO7tZakR" />
         <Link Id="Cx6C2L4U7R6MYJVu0AB65y" Ids="NcZs9G20hvaPjlQPM07JpX,FT14HGRHpDXQYlbUlVseAG" />
         <Link Id="SXvBLqcS72TNm3Rygex9Ci" Ids="FZXe0lAQh9cM4qKmCYnkCU,PzZuYjPMEIYNOMi4pupGAi" />
+        <Link Id="UYCgWOaPLJEOQRtqnpOra6" Ids="RUvHDODVH6QK9zC9ZmMBSZ,MCF6dOqBve2PEQTSlcyvi2" />
+        <Link Id="R3lxryCXN0WO6sdFCi7i8U" Ids="MdpDVn8nPG1Lf3DUTs03Up,NGJhYdFlPc9NzSfEtDCUlH" />
+        <Link Id="ITaDaiFW6EJOffB8h8o4Hr" Ids="Gg3DOJl7BDwPl7n4jJaArM,FhK8g9hZv5VONaGhqaTolm" />
+        <Link Id="GcXSqI7dXnyMvL8OchQqUv" Ids="S1UiyOm78AUOVAIqcrXh3c,PSwMENSmFYXN6Cgxlz9eLi" />
       </Patch>
     </Node>
   </Patch>
