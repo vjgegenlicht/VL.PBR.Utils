@@ -1,5 +1,5 @@
 [Summary("Multiplies the inputs.")]
-shader PointDistance_ShaderFX : ComputeFloat, ComputeFloat4, Transformation
+shader SDFBox_ShaderFX : ComputeFloat, ComputeFloat4, Transformation
 {
     //input for another ShaderFX node
     
@@ -15,10 +15,8 @@ shader PointDistance_ShaderFX : ComputeFloat, ComputeFloat4, Transformation
   
 		cbuffer PerMaterial //when used in materials
     {
-        [Default(0.1f)]
-stage float Smooth; 
-[Default(0)]
-stage float ClipBox;
+  
+
 stage float4x4 BoxTransform;
 	}
 	
@@ -46,12 +44,7 @@ float4 wpos = mul(streams.Position, streams.World);
 	 // evaluate that shader graph above this node
     float3 dpos = mul(wpos,BoxTransform).xyz;
 	float cd = df(dpos);
-	float scd = cd-Smooth;
-	if(ClipBox > 0)
-{clip(-scd);
-}
-	float alpha = Smooth > 0.0001 ? 1-saturate((cd)/Smooth) : 1;
-	return alpha;
+	return cd;
     }
 };
 

@@ -1,0 +1,32 @@
+[Summary("Fresnel Function ")]
+
+shader FresnelIn_ShaderFX : ComputeFloat, NormalStream, Transformation, PositionStream4
+{
+    //input for another ShaderFX node
+		[Default(1)]
+		compose ComputeFloat ShaderInput;
+	
+	cbuffer PerMaterial //when used in materials
+    {
+        [Default(3.5)]
+		compose ComputeFloat Exponent; 
+		
+	}
+
+    override float Compute()
+    {
+        
+		float Val = ShaderInput.Compute();
+		float Exp = Exponent.Compute(); 
+		
+		float3 Viewvec = normalize(streams.Eye - streams.PositionWS)  ;
+		
+        float fresnel = dot(streams.meshNormalWS,Viewvec);
+		
+		fresnel = saturate(1 - fresnel);
+		
+		fresnel = pow (fresnel,Exp) ;
+	
+		return  Val *fresnel ;
+    }
+};

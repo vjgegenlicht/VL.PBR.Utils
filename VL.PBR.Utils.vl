@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="UIv5B0vuxb4NyhbI0MgaKO" LanguageVersion="2021.4.0.80" Version="0.128">
-  <NugetDependency Id="BVDpkBMjTtUOcTT3QazVlU" Location="VL.CoreLib" Version="2021.4.0-0080-g5e37111810" />
+<Document xmlns:p="property" Id="UIv5B0vuxb4NyhbI0MgaKO" LanguageVersion="2021.4.0.88" Version="0.128">
+  <NugetDependency Id="BVDpkBMjTtUOcTT3QazVlU" Location="VL.CoreLib" Version="2021.4.0-proxies-0088-g4662dc3b94" />
   <Patch Id="N7c0ES3N98CPxHnGoyXBjC">
     <Canvas Id="BYypoJn2IxpM62VapsNUMl" DefaultCategory="PBRUtils" CanvasType="FullCategory">
       <!--
@@ -4059,7 +4059,7 @@
                   <Item>Transparency</Item>
                 </p:Value>
               </Pad>
-              <Pad Id="HzH41QIyffTNfbZveSHTKD" Bounds="714,391,147,11" ShowValueBox="true" isIOBox="true" Value="..\..\..\..\..\..\Downloads\TestFolder\">
+              <Pad Id="HzH41QIyffTNfbZveSHTKD" Bounds="714,391,147,11" ShowValueBox="true" isIOBox="true" Value="..\..\..\..\..\..\Downloads\TestFolder\\">
                 <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="TypeFlag" Name="Path" />
                 </p:TypeAnnotation>
@@ -6364,6 +6364,8 @@
                       <Choice Kind="TypeFlag" Name="Integer32" />
                     </p:TypeAnnotation>
                   </Pad>
+                  <ControlPoint Id="Ex50T1YE1g3MUPEurRpPUZ" Bounds="939,609" />
+                  <ControlPoint Id="MPS8NGDbeMONvIiOZVnA49" Bounds="942,912" />
                 </Patch>
                 <ControlPoint Id="Oj7E18iyT8hPuyqpiE8Xzl" Bounds="749,543" Alignment="Top" />
                 <ControlPoint Id="FVwNLNIkjf5NV89bpdP5n4" Bounds="902,543" Alignment="Top" />
@@ -6394,11 +6396,6 @@
               </Pin>
               <Pin Id="EPjnMK9sex8MUPxho0rrf7" Name="Texture" Kind="OutputPin" />
             </Patch>
-            <!--
-
-    ************************  ************************
-
--->
             <ProcessDefinition Id="OuFR18tuiEhMixBWr2msHn">
               <Fragment Id="GFUf8E3yFurMfdmJFGNhgI" Patch="AekBjkEInkvPv2xZLZWrea" Enabled="true" />
               <Fragment Id="PyJEZjTauNtQMYvHzRZzlZ" Patch="VwPfNdAudNCMLmlLdA8yhw" Enabled="true" />
@@ -6428,6 +6425,7 @@
             <Link Id="RPgwskb6CUJLrNmlJ0vhZA" Ids="CGHd1HmX5okQAic0NGYiqA,Oj7E18iyT8hPuyqpiE8Xzl" />
             <Link Id="JlbJFAtISPINqT1xp52B69" Ids="MBOfDhWYtgVPsJZFmLqtFO,EPjnMK9sex8MUPxho0rrf7" IsHidden="true" />
             <Link Id="NuUIjaITUXENfEBZLfgm6l" Ids="I88rBbsSXJoMD9ag2yrIpX,MBOfDhWYtgVPsJZFmLqtFO" />
+            <Link Id="UeCyE3xBjfMNnGvsR9CkuZ" Ids="FVwNLNIkjf5NV89bpdP5n4,Ex50T1YE1g3MUPEurRpPUZ,MPS8NGDbeMONvIiOZVnA49,Vc0IAPtTKDNOgzzzgMxKXU" />
           </Patch>
         </Node>
       </Canvas>
@@ -6654,6 +6652,7 @@
             <Link Id="LYseVCMlemKQavpyCoiNp0" Ids="VhCUmuPh3b7PR98f1uKAeg,UCJwqE5UZQSOaG6nH9ZfAq" />
             <Link Id="DQZpgcWKpbPLC7SOE31C8b" Ids="VaG79ukwo9hLvQnJ3lR0i7,SsmqZuFMwAcMNjF035akID" />
             <Link Id="AEvwuTpPGUjMN72uhEsPMp" Ids="VaG79ukwo9hLvQnJ3lR0i7,IqQDXcMNS9cO76OIKFFp6v" />
+            <Patch Id="QEQHC3Ib1wSOaIzmBx007o" Name="CreateDefault (Hidden)" />
           </Patch>
         </Node>
         <!--
@@ -8243,9 +8242,9 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="HLCm7pm5Q5GLqtDJQ95xkI" Location="VL.CoreLib" Version="2021.4.0-0080-g5e37111810" />
-  <NugetDependency Id="N9ZEmCA48HiL0RxVlYuOfR" Location="VL.Stride" Version="2021.4.0-0080-g5e37111810" />
+  <NugetDependency Id="HLCm7pm5Q5GLqtDJQ95xkI" Location="VL.CoreLib" Version="2021.4.0-proxies-0088-g4662dc3b94" />
+  <NugetDependency Id="N9ZEmCA48HiL0RxVlYuOfR" Location="VL.Stride" Version="2021.4.0-proxies-0088-g4662dc3b94" />
   <NugetDependency Id="CA6KQuF2T6SLj3pIVEnn2O" Location="VL.FastNoise" Version="1.0.2" />
-  <NugetDependency Id="PMUTP6ECWoUMmBy3kCLI29" Location="VL.Skia" Version="2021.4.0-0080-g5e37111810" />
-  <NugetDependency Id="M45RtOSakzNLeiYN21JQV9" Location="VL.Stride.Runtime" Version="2021.4.0-0080-g5e37111810" />
+  <NugetDependency Id="PMUTP6ECWoUMmBy3kCLI29" Location="VL.Skia" Version="2021.4.0-proxies-0088-g4662dc3b94" />
+  <NugetDependency Id="M45RtOSakzNLeiYN21JQV9" Location="VL.Stride.Runtime" Version="2021.4.0-proxies-0088-g4662dc3b94" />
 </Document>

@@ -1,6 +1,8 @@
 [Summary("Multiplies the inputs.")]
-shader PointDistance_ShaderFX : ComputeFloat, ComputeFloat4, Transformation
+shader SDFClipping_ShaderFX : ComputeFloat, NormalStream, Transformation
 {
+    	[Default(1)]
+		compose ComputeFloat ShaderInput;
     //input for another ShaderFX node
     
      // The position attribute
@@ -11,7 +13,7 @@ shader PointDistance_ShaderFX : ComputeFloat, ComputeFloat4, Transformation
 
     // The depth in view space
     stage stream float DepthVS : DEPTH_VS;
-	
+
   
 		cbuffer PerMaterial //when used in materials
     {
@@ -19,39 +21,25 @@ shader PointDistance_ShaderFX : ComputeFloat, ComputeFloat4, Transformation
 stage float Smooth; 
 [Default(0)]
 stage float ClipBox;
-stage float4x4 BoxTransform;
+
+
+
+
+
 	}
 	
-	
-        float sBox(float3 p, float3 b)
-{
-	float3 d = abs(p) - b;
-	return min(max(d.x,max(d.y,d.z)),0.0) + length(max(d,0.0));
-}
-
-
-float df(float3 p)
-{
-	return sBox(p, 1.0.xxx);
-}
- 
-
 
     override float Compute()
     {
   
-
-float4 wpos = mul(streams.Position, streams.World);
-
-	 // evaluate that shader graph above this node
-    float3 dpos = mul(wpos,BoxTransform).xyz;
-	float cd = df(dpos);
+	 // evaluate that shader graph above this no
+	float cd = ShaderInput.Compute(); 
 	float scd = cd-Smooth;
 	if(ClipBox > 0)
 {clip(-scd);
 }
 	float alpha = Smooth > 0.0001 ? 1-saturate((cd)/Smooth) : 1;
-	return alpha;
+	return cd;
     }
 };
 
