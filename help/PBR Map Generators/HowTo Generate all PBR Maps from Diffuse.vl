@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="BkkcBlSs0ZMO6Xm3RziL4D" LanguageVersion="2021.4.0.74" Version="0.128">
-  <NugetDependency Id="KOwycLmCXlCPpy7m15VJ03" Location="VL.CoreLib" Version="2021.4.0-0074-geb09e9545d" />
+<Document xmlns:p="property" Id="BkkcBlSs0ZMO6Xm3RziL4D" LanguageVersion="2021.4.0.90" Version="0.128">
+  <NugetDependency Id="KOwycLmCXlCPpy7m15VJ03" Location="VL.CoreLib" Version="2021.4.0-proxies-0090-g6fce957940" />
   <Patch Id="UIYs7OvcDdmNPKKUnIZUnk">
     <Canvas Id="IoxQjPCWBQaNFrI5sX6jIo" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -194,7 +194,7 @@
                 <Choice Kind="TypeFlag" Name="Float32" />
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="UXIKAySfUdGMDYxPiVFdoQ" Name="Amount" Kind="InputPin" DefaultValue="4.41">
+            <Pin Id="UXIKAySfUdGMDYxPiVFdoQ" Name="Amount" Kind="InputPin" DefaultValue="2.45">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Float32" />
               </p:TypeAnnotation>
@@ -350,6 +350,7 @@
             <Pin Id="KBBc8yGraMvP78SbSlXHTw" Name="From" Kind="InputPin" />
             <Pin Id="EO4QWLHTsnmO0DdFaDpig8" Name="To" Kind="InputPin" />
             <Pin Id="KLauVP1vRcEQZKP1CoYhcS" Name="Is Horizontal" Kind="InputPin" />
+            <Pin Id="PAnY22EM1cRNXLQ8kWO507" Name="Gamma" Kind="InputPin" />
             <Pin Id="BnVF4hfUusyN2f7qyT7RVS" Name="Output Size" Kind="InputPin" />
             <Pin Id="SlJy1zS1wuONzzYthBszIu" Name="Output Format" Kind="InputPin" />
             <Pin Id="JwUJtdi81tsMOveM9PKxV9" Name="Output Texture" Kind="InputPin" />
@@ -416,7 +417,7 @@
             </Pin>
             <Pin Id="U1gGrXgjU6hLsRh5EFmKfK" Name="Material" Kind="OutputPin" />
           </Node>
-          <Pad Id="R9DbptQY1U8LMVh4gkxQjW" Comment="Scale" Bounds="-10,335,35,28" ShowValueBox="true" isIOBox="true" Value="3.99, 2.5">
+          <Pad Id="R9DbptQY1U8LMVh4gkxQjW" Comment="Scale" Bounds="-10,335,35,28" ShowValueBox="true" isIOBox="true" Value="2.76, 2.06">
             <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Vector2" />
             </p:TypeAnnotation>
@@ -446,7 +447,11 @@
             <Pin Id="Hcy58JGCJKKQWzt3MGo4kR" Name="Premultiply Alpha" Kind="InputPin" />
             <Pin Id="R86VhcafaYjQKvCqc5WUee" Name="Compress" Kind="InputPin" />
             <Pin Id="I8FDOXhxWFLMa31DSuzSiP" Name="Alpha Format" Kind="InputPin" />
-            <Pin Id="UfkR8ZPw10IOpgLIaFriPC" Name="Reload" Kind="InputPin" />
+            <Pin Id="UfkR8ZPw10IOpgLIaFriPC" Name="Reload" Kind="InputPin" DefaultValue="False">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pin>
             <Pin Id="QswaAHs3qawPL1Ieteb1wR" Name="Texture" Kind="OutputPin" />
             <Pin Id="KHey8InuZs3LNnnv5BgACJ" Name="Is Loading" Kind="OutputPin" />
             <Pin Id="Rzecwl11AZ0OrnfVBVXK7P" Name="Already Loaded" Kind="OutputPin" />
@@ -457,17 +462,17 @@
               <Choice Kind="ProcessAppFlag" Name="NormalFromDiffuse" />
             </p:NodeReference>
             <Pin Id="HRy4DVc3BdPQd3QEtiqkEF" Name="PBRTextures" Kind="InputPin" />
-            <Pin Id="OOGMpNVdcDQPIm6xQZIqXq" Name="A Depth" Kind="InputPin" DefaultValue="1.2">
+            <Pin Id="OOGMpNVdcDQPIm6xQZIqXq" Name="A Depth" Kind="InputPin" DefaultValue="1.45">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Float32" />
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="NSdGghH0vcOQF9RKWO6hpg" Name="Shape" Kind="InputPin" DefaultValue="0.53">
+            <Pin Id="NSdGghH0vcOQF9RKWO6hpg" Name="Shape" Kind="InputPin" DefaultValue="0.27">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Float32" />
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="RsphSCZztYKLfQwhCDLJ0g" Name="Max Radius" Kind="InputPin" DefaultValue="2.53">
+            <Pin Id="RsphSCZztYKLfQwhCDLJ0g" Name="Max Radius" Kind="InputPin" DefaultValue="0.46">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Float32" />
               </p:TypeAnnotation>
@@ -564,7 +569,7 @@
               <Choice Kind="ProcessAppFlag" Name="DisplacementfromDiffuse" />
             </p:NodeReference>
             <Pin Id="QRqwaz6r8IDMAzthyM9KWk" Name="PBRTextures" Kind="InputPin" />
-            <Pin Id="BdyN1c38NqSMvZNW2Ktp6Q" Name="ClipBlack" Kind="InputPin" DefaultValue="0.31">
+            <Pin Id="BdyN1c38NqSMvZNW2Ktp6Q" Name="ClipBlack" Kind="InputPin" DefaultValue="-0.29">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Float32" />
               </p:TypeAnnotation>
@@ -574,10 +579,22 @@
                 <Choice Kind="TypeFlag" Name="Float32" />
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="FzJOGu7MaHhNVuibjO4IY3" Name="Black" Kind="InputPin" />
-            <Pin Id="V8KNoAiEQrZLx7UlrwOvnh" Name="Gray" Kind="InputPin" />
-            <Pin Id="J86vKqsgsIrN9VDAbVBjmB" Name="White" Kind="InputPin" />
-            <Pin Id="M3wTiHchxfsQXKtzd18t8B" Name="Gamma" Kind="InputPin" DefaultValue="0.64">
+            <Pin Id="FzJOGu7MaHhNVuibjO4IY3" Name="Black" Kind="InputPin" DefaultValue="0">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="V8KNoAiEQrZLx7UlrwOvnh" Name="Gray" Kind="InputPin" DefaultValue="0.36">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="J86vKqsgsIrN9VDAbVBjmB" Name="White" Kind="InputPin" DefaultValue="1">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="M3wTiHchxfsQXKtzd18t8B" Name="Gamma" Kind="InputPin" DefaultValue="0.42">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Float32" />
               </p:TypeAnnotation>
@@ -589,7 +606,7 @@
             </Pin>
             <Pin Id="BPH2jDpNd25MAgjv3fdXDD" Name="PBRTextures" Kind="OutputPin" />
           </Node>
-          <Pad Id="K8rbhrf2XmWN75wPSApxvc" Comment="Enabled" Bounds="427,1047,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="K8rbhrf2XmWN75wPSApxvc" Comment="Enabled" Bounds="427,1047,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -608,7 +625,7 @@
                 <Choice Kind="TypeFlag" Name="Float32" />
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="L6mAPVHfpttNXvifSAPq5C" Name="ChromaRange" Kind="InputPin" DefaultValue="0.17">
+            <Pin Id="L6mAPVHfpttNXvifSAPq5C" Name="ChromaRange" Kind="InputPin" DefaultValue="0.12">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Float32" />
               </p:TypeAnnotation>
@@ -625,7 +642,7 @@
             </Pin>
             <Pin Id="VS9PbzaeaFfMMcgB9MLZQp" Name="PBRTextures" Kind="OutputPin" />
           </Node>
-          <Pad Id="Iji5mkec0MNM9fqJsdJmrx" Comment="Enabled" Bounds="254,1003,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="Iji5mkec0MNM9fqJsdJmrx" Comment="Enabled" Bounds="254,1003,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -693,20 +710,32 @@
               <Choice Kind="ProcessAppFlag" Name="MetalnessFromDiffuse" />
             </p:NodeReference>
             <Pin Id="Ej1qMKfteOqL7ABYH8HN2M" Name="PBRTextures" Kind="InputPin" />
-            <Pin Id="FNFax8mbzySPzSa9z11YPp" Name="LumaRange" Kind="InputPin" />
-            <Pin Id="N9KbhwkRwAMNAywAWk9hFD" Name="ChromaRange" Kind="InputPin" />
-            <Pin Id="Us1HGmAyPNvLqEDhuzENHw" Name="ChromaKey" Kind="InputPin" DefaultValue="0.1900001, 0, 0.5, 0.93">
-              <p:TypeAnnotation LastCategoryFullName="Color" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="TypeFlag" Name="RGBA" />
-              </p:TypeAnnotation>
-            </Pin>
-            <Pin Id="GtdXkJVddlVLU6yGtlHvYB" Name="Threshold" Kind="InputPin" />
-            <Pin Id="MXhalSftoZNMYCIZRq4UQ9" Name="BlackOut" Kind="InputPin" DefaultValue="0.27">
+            <Pin Id="FNFax8mbzySPzSa9z11YPp" Name="LumaRange" Kind="InputPin" DefaultValue="0.07">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Float32" />
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="RuPhrhVK2eLQOSn7uZKK6Z" Name="WhiteOut" Kind="InputPin" DefaultValue="0.86">
+            <Pin Id="N9KbhwkRwAMNAywAWk9hFD" Name="ChromaRange" Kind="InputPin" DefaultValue="0.42">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="Us1HGmAyPNvLqEDhuzENHw" Name="ChromaKey" Kind="InputPin" DefaultValue="0.04499954, 0.4382969, 0.8999996, 0.93">
+              <p:TypeAnnotation LastCategoryFullName="Color" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="RGBA" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="GtdXkJVddlVLU6yGtlHvYB" Name="Threshold" Kind="InputPin" DefaultValue="0.36">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="MXhalSftoZNMYCIZRq4UQ9" Name="BlackOut" Kind="InputPin" DefaultValue="0.06">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="RuPhrhVK2eLQOSn7uZKK6Z" Name="WhiteOut" Kind="InputPin" DefaultValue="1.28">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Float32" />
               </p:TypeAnnotation>
@@ -729,32 +758,32 @@
               <Choice Kind="ProcessAppFlag" Name="RoughnessFromDiffuse" />
             </p:NodeReference>
             <Pin Id="QqvWH1LP9QeQSEmpYFBxCD" Name="PBRTextures" Kind="InputPin" />
-            <Pin Id="HoQkvNElNHsPajuyDaJzBa" Name="LumaRange" Kind="InputPin" DefaultValue="0.05">
+            <Pin Id="HoQkvNElNHsPajuyDaJzBa" Name="LumaRange" Kind="InputPin" DefaultValue="0.17">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Float32" />
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="Eowomr2pdGjL7x8vETCPgS" Name="ChromaRange" Kind="InputPin" DefaultValue="0.08">
+            <Pin Id="Eowomr2pdGjL7x8vETCPgS" Name="ChromaRange" Kind="InputPin" DefaultValue="0.07">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Float32" />
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="I3bmOFHlwBoNZcw09Cx86r" Name="ChromaKey" Kind="InputPin" DefaultValue="0, 0.3800006, 0.05897011, 0.9300001">
+            <Pin Id="I3bmOFHlwBoNZcw09Cx86r" Name="ChromaKey" Kind="InputPin" DefaultValue="0.0653085, 0.7700002, 0, 0.9300001">
               <p:TypeAnnotation LastCategoryFullName="Color" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="RGBA" />
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="KzBU98SEkxdPgt4kZAbK8w" Name="Threshold" Kind="InputPin" DefaultValue="0.01">
+            <Pin Id="KzBU98SEkxdPgt4kZAbK8w" Name="Threshold" Kind="InputPin" DefaultValue="0.06">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Float32" />
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="QSZzbbchPiwNBtNO2QQTzF" Name="BlackOut" Kind="InputPin" DefaultValue="0.2">
+            <Pin Id="QSZzbbchPiwNBtNO2QQTzF" Name="BlackOut" Kind="InputPin" DefaultValue="0.36">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Float32" />
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="KLKL9AS4DEiNiPMZchR9uL" Name="WhiteOut" Kind="InputPin" DefaultValue="1">
+            <Pin Id="KLKL9AS4DEiNiPMZchR9uL" Name="WhiteOut" Kind="InputPin" DefaultValue="0.81">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Float32" />
               </p:TypeAnnotation>
@@ -827,7 +856,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Ai5MGPIP5oSOjV1QzZZBWy" Comment="Enable" Bounds="-43,-324,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="Ai5MGPIP5oSOjV1QzZZBWy" Comment="Enable" Bounds="-43,-324,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -843,7 +872,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="IH97XSFFnzkOJiTftV4a8e" Comment="Enable" Bounds="-24,-447,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="IH97XSFFnzkOJiTftV4a8e" Comment="Enable" Bounds="-24,-447,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -851,7 +880,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="DrkhtjFgkpUOHQKKwt8z1P" Comment="Enable" Bounds="-57,-495,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="DrkhtjFgkpUOHQKKwt8z1P" Comment="Enable" Bounds="-57,-495,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -859,12 +888,12 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="VMMjKSIvy8vMViBI4aGnvk" Comment="Offset" Bounds="68,318,35,28" ShowValueBox="true" isIOBox="true" Value="0.17, 0">
+          <Pad Id="VMMjKSIvy8vMViBI4aGnvk" Comment="Offset" Bounds="68,318,35,28" ShowValueBox="true" isIOBox="true" Value="0.62, 0">
             <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Vector2" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="Qfvi7SPedidMuYZviHrFZf" Comment="Filtering" Bounds="-95,226,214,15" ShowValueBox="true" isIOBox="true" Value="Point">
+          <Pad Id="Qfvi7SPedidMuYZviHrFZf" Comment="Filtering" Bounds="-95,226,214,15" ShowValueBox="true" isIOBox="true" Value="Anisotropic">
             <p:TypeAnnotation LastCategoryFullName="Stride.Graphics" LastSymbolSource="Stride.dll">
               <Choice Kind="TypeFlag" Name="TextureFilter" />
             </p:TypeAnnotation>
@@ -939,7 +968,7 @@
             <Pin Id="Doimzch5Cj4Ma2iPh0eH5z" Name="Input" Kind="InputPin" />
             <Pin Id="HYQqPTpvXKINDRbZPjoIfD" Name="Result" Kind="OutputPin" />
           </Node>
-          <Pad Id="KoyZgpU6F7ePTt5hzkuhh8" Comment="" Bounds="-110,-867,214,25" ShowValueBox="true" isIOBox="true" Value="content\assets\Diffuse\stylizedgras.jpg">
+          <Pad Id="KoyZgpU6F7ePTt5hzkuhh8" Comment="" Bounds="-110,-867,214,25" ShowValueBox="true" isIOBox="true" Value="content\assets\Diffuse\stylizedgras.png">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1187,7 +1216,6 @@
         <Link Id="R3lxryCXN0WO6sdFCi7i8U" Ids="MdpDVn8nPG1Lf3DUTs03Up,NGJhYdFlPc9NzSfEtDCUlH" />
         <Link Id="ITaDaiFW6EJOffB8h8o4Hr" Ids="Gg3DOJl7BDwPl7n4jJaArM,FhK8g9hZv5VONaGhqaTolm" />
         <Link Id="GcXSqI7dXnyMvL8OchQqUv" Ids="S1UiyOm78AUOVAIqcrXh3c,PSwMENSmFYXN6Cgxlz9eLi" />
-        <Link Id="BUfxTmVKxIULVe1VA90xRl" Ids="JqUvudZLcFKM7t0O7tCHWh,EmD9AtnYq6KPNfUOtMWFmF" />
         <Link Id="ElfPHZjffeqOFTFndUG6bD" Ids="Qfvi7SPedidMuYZviHrFZf,LlImHxCuOweMxGXp71SHJn" />
         <Link Id="NemJTJmWBe3OSRu3e0Zdzz" Ids="VpAC0TmyDPkNmZYsuSc6Gk,OJm1TJe1IsvMp5KK8jP1A8" />
         <Link Id="NiCv8v5x9TLO9OERTE19wP" Ids="VpAC0TmyDPkNmZYsuSc6Gk,C1hEyznG0dLMILjvq1LSNa" />
@@ -1212,12 +1240,15 @@
           <Pin Id="J2SmAKUbR9aOiFbda91Kqo" Name="New Format" Kind="InputPin" />
         </Patch>
         <Link Id="E5IUuGdEJf4NXjTPnNoccK" Ids="RvZfa1ur3a2NZjFhE7Pv1G,L9eTTzBlISLN9Q6N2bWVdp" IsFeedback="true" />
+        <Patch Id="ExUjL9a2xlEObJ4kE5BTaI" Name="CreateDefault (Hidden)" />
+        <Link Id="UXpLtWxLMzNPUusBa9PGXY" Ids="CMzmhtI1qyLOdhsYODqgkh,V0rvFOtuWSuLBymE6DAylG" />
+        <Link Id="MZQPD6l8gJpMU9gI2n7PeN" Ids="JqUvudZLcFKM7t0O7tCHWh,EmD9AtnYq6KPNfUOtMWFmF" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="S0uUICEdiwJLL7QEiqPNPE" Location="VL.CoreLib" Version="2021.4.0-0074-geb09e9545d" />
+  <NugetDependency Id="S0uUICEdiwJLL7QEiqPNPE" Location="VL.CoreLib" Version="2021.4.0-proxies-0090-g6fce957940" />
   <DocumentDependency Id="JZhhOWnZ5CEOItIeU8mvIz" Location="../../VL.PBR.Utils.vl" />
-  <NugetDependency Id="D6S0ogIq2Z4MaeGXfO7EQK" Location="VL.Stride" Version="2021.4.0-0074-geb09e9545d" />
-  <NugetDependency Id="MOsBsItjX8kPAtdC11NrVk" Location="VL.Stride.Runtime" IsForward="true" Version="2021.4.0-0074-geb09e9545d" />
+  <NugetDependency Id="D6S0ogIq2Z4MaeGXfO7EQK" Location="VL.Stride" Version="2021.4.0-proxies-0090-g6fce957940" />
+  <NugetDependency Id="MOsBsItjX8kPAtdC11NrVk" Location="VL.Stride.Runtime" IsForward="true" Version="2021.4.0-proxies-0090-g6fce957940" />
   <DocumentDependency Id="Vk5w9OdKGdtN6Q0CYrHSEo" Location="../../../../../../../../../../Program Files/vvvv/vvvv_gamma_2021.4.0-0061-g0f03ee8cb3/lib/packs/VL.Stride.Runtime.2021.4.0-0061-g0f03ee8cb3/VL.Stride.HDE.vl" />
 </Document>

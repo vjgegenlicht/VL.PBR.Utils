@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="UIv5B0vuxb4NyhbI0MgaKO" LanguageVersion="2021.4.0.88" Version="0.128">
-  <NugetDependency Id="BVDpkBMjTtUOcTT3QazVlU" Location="VL.CoreLib" Version="2021.4.0-proxies-0088-g4662dc3b94" />
+<Document xmlns:p="property" Id="UIv5B0vuxb4NyhbI0MgaKO" LanguageVersion="2021.4.0.90" Version="0.128">
+  <NugetDependency Id="BVDpkBMjTtUOcTT3QazVlU" Location="VL.CoreLib" Version="2021.4.0-proxies-0090-g6fce957940" />
   <Patch Id="N7c0ES3N98CPxHnGoyXBjC">
     <Canvas Id="BYypoJn2IxpM62VapsNUMl" DefaultCategory="PBRUtils" CanvasType="FullCategory">
       <!--
@@ -4059,7 +4059,7 @@
                   <Item>Transparency</Item>
                 </p:Value>
               </Pad>
-              <Pad Id="HzH41QIyffTNfbZveSHTKD" Bounds="714,391,147,11" ShowValueBox="true" isIOBox="true" Value="..\..\..\..\..\..\Downloads\TestFolder\\">
+              <Pad Id="HzH41QIyffTNfbZveSHTKD" Bounds="714,391,147,11" ShowValueBox="true" isIOBox="true" Value="..\..\..\..\..\..\Downloads\TestFolder\">
                 <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="TypeFlag" Name="Path" />
                 </p:TypeAnnotation>
@@ -6623,6 +6623,7 @@
             <ProcessDefinition Id="QAih6TJnf9UO9Nig3yqfFs">
               <Fragment Id="HI6sv1kSbAMNfLPGmD8Cy6" Patch="CFmIsTGWOb4NTOkh0PrbvV" Enabled="true" />
               <Fragment Id="KihjLRfpQeBOFqrF3tucdO" Patch="EGO5k7rvazwP8sdxBaZKT5" Enabled="true" />
+              <Fragment Id="OvgyM16mKmXOlyViVi7CEG" Patch="QEQHC3Ib1wSOaIzmBx007o" />
             </ProcessDefinition>
             <Link Id="MYJxg5l4jkZLBSZCIk2k54" Ids="HCe10iOJJaDNcWF7CxqcGR,VhCUmuPh3b7PR98f1uKAeg" IsHidden="true" />
             <Link Id="M1HhbtayOzAQFVlbRO1prt" Ids="BH72M3CA9EiOLVQ48liJ7P,FmHXUV0TNbGNp9iN7ijcDe" IsFeedback="true" />
@@ -8022,7 +8023,7 @@
               <ControlPoint Id="CtWaO7NQXGCPPX5Ht1naXB" Bounds="829,635" Alignment="Top" />
               <ControlPoint Id="QekOX5Lq2SOM2sdkBpjb7x" Bounds="715,917" Alignment="Bottom" />
             </Node>
-            <Node Bounds="666,569,98,26" Id="OxjH5gYR84TOV01iK6C5uP">
+            <Node Bounds="623,574,98,26" Id="OxjH5gYR84TOV01iK6C5uP">
               <p:NodeReference LastCategoryFullName="PBRUtils.PBRTextures" LastSymbolSource="VL.PBR.Utils.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="GetTextureSpread" />
@@ -8031,7 +8032,7 @@
               <Pin Id="FKN0cu31R9yNk4erWSsIYc" Name="Output" Kind="StateOutputPin" />
               <Pin Id="Ix8sZZlDJoXLAtRm6uBPBE" Name="TextureSpread" Kind="OutputPin" />
             </Node>
-            <Node Bounds="842,573,98,26" Id="O8P5BVbhWVLOJi0ZRlhF4K">
+            <Node Bounds="739,580,98,26" Id="O8P5BVbhWVLOJi0ZRlhF4K">
               <p:NodeReference LastCategoryFullName="PBRUtils.PBRTextures" LastSymbolSource="VL.PBR.Utils.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="GetTextureSpread" />
@@ -8049,7 +8050,7 @@
               <Pin Id="MOYDwJ6OAPVONAhEgV5zsq" Name="Input" Kind="InputPin" />
               <Pin Id="KrMKsXflZc4OXWT1Uq5xdS" Name="Output" Kind="StateOutputPin" />
             </Node>
-            <Node Bounds="774,388,93,26" Id="VcOkxnVvzJdMTu0uJ8yDXo">
+            <Node Bounds="769,383,93,26" Id="VcOkxnVvzJdMTu0uJ8yDXo">
               <p:NodeReference LastCategoryFullName="Main.PBRTextures" LastSymbolSource="VL.PBR.Utils.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="GetDisplacement" />
@@ -8068,7 +8069,7 @@
               <Pin Id="VquZrxmi5QULR42jNIyKDZ" Name="Displacement" Kind="InputPin" />
               <Pin Id="EzVhRutprAWO2qX1OgFJzQ" Name="Output" Kind="StateOutputPin" />
             </Node>
-            <Node Bounds="764,479,85,19" Id="TjTYK4TpHwnLtfSq2etLts">
+            <Node Bounds="772,450,85,19" Id="TjTYK4TpHwnLtfSq2etLts">
               <p:NodeReference LastCategoryFullName="Stride.Textures.Utils" LastSymbolSource="VL.Stride.Rendering.EffectShaderNodes">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="SetAlpha" />
@@ -8091,7 +8092,7 @@
               </Pin>
               <Pin Id="FV6gq372SmlQMGZt8xB0RF" Name="Output" Kind="OutputPin" />
             </Node>
-            <Node Bounds="823,426,65,19" Id="S0an55Hc8diMvrzO3PzSoQ">
+            <Node Bounds="832,415,65,19" Id="S0an55Hc8diMvrzO3PzSoQ">
               <p:NodeReference LastCategoryFullName="Stride.Materials.Inputs" LastSymbolSource="VL.Stride.Rendering.ShaderFX.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="ColorMap" />
@@ -8102,7 +8103,7 @@
               <Pin Id="Sdo8ZwcRsQ9PpB6S8WMxAz" Name="Texcoord Index" Kind="InputPin" />
               <Pin Id="TSLz0bCppPJODDkoKLebXv" Name="Output" Kind="OutputPin" />
             </Node>
-            <Node Bounds="656,461,85,19" Id="QOYwcxcxWYAQMraZnSXwaa">
+            <Node Bounds="753,488,85,19" Id="QOYwcxcxWYAQMraZnSXwaa">
               <p:NodeReference LastCategoryFullName="Stride.Textures.Mixer" LastSymbolSource="VL.Stride.Rendering.TextureFX.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Blend" />
@@ -8110,7 +8111,7 @@
               </p:NodeReference>
               <Pin Id="SAqrpZWVYS5LV6GgStvJMi" Name="Input" Kind="InputPin" />
               <Pin Id="GsLqzDtgiCYMf9fVDm3aqH" Name="Input 2" Kind="InputPin" />
-              <Pin Id="IK5PAX4fY84MYyOatVCEQ6" Name="Blend Operation" Kind="InputPin" DefaultValue="Average">
+              <Pin Id="IK5PAX4fY84MYyOatVCEQ6" Name="Blend Operation" Kind="InputPin" DefaultValue="Over">
                 <p:TypeAnnotation LastCategoryFullName="VL.Stride.Shaders.ShaderFX" LastSymbolSource="VL.Stride.Runtime.dll">
                   <Choice Kind="TypeFlag" Name="BlendOperator" />
                 </p:TypeAnnotation>
@@ -8123,7 +8124,7 @@
               <Pin Id="POj0YvkTaplMGdpuGTU9vt" Name="Apply" Kind="InputPin" />
               <Pin Id="Pn9Xw0U6bKDNmiEYrFN0pf" Name="Output" Kind="OutputPin" />
             </Node>
-            <Node Bounds="617,416,65,19" Id="KudfLFpmrv5O39X7YpYybC">
+            <Node Bounds="688,453,65,19" Id="KudfLFpmrv5O39X7YpYybC">
               <p:NodeReference LastCategoryFullName="Stride.Textures.Source" LastSymbolSource="VL.Stride.Rendering.EffectShaderNodes">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="Category" Name="Textures" />
@@ -8242,9 +8243,9 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="HLCm7pm5Q5GLqtDJQ95xkI" Location="VL.CoreLib" Version="2021.4.0-proxies-0088-g4662dc3b94" />
-  <NugetDependency Id="N9ZEmCA48HiL0RxVlYuOfR" Location="VL.Stride" Version="2021.4.0-proxies-0088-g4662dc3b94" />
+  <NugetDependency Id="HLCm7pm5Q5GLqtDJQ95xkI" Location="VL.CoreLib" Version="2021.4.0-proxies-0090-g6fce957940" />
+  <NugetDependency Id="N9ZEmCA48HiL0RxVlYuOfR" Location="VL.Stride" Version="2021.4.0-proxies-0090-g6fce957940" />
   <NugetDependency Id="CA6KQuF2T6SLj3pIVEnn2O" Location="VL.FastNoise" Version="1.0.2" />
-  <NugetDependency Id="PMUTP6ECWoUMmBy3kCLI29" Location="VL.Skia" Version="2021.4.0-proxies-0088-g4662dc3b94" />
-  <NugetDependency Id="M45RtOSakzNLeiYN21JQV9" Location="VL.Stride.Runtime" Version="2021.4.0-proxies-0088-g4662dc3b94" />
+  <NugetDependency Id="PMUTP6ECWoUMmBy3kCLI29" Location="VL.Skia" Version="2021.4.0-proxies-0090-g6fce957940" />
+  <NugetDependency Id="M45RtOSakzNLeiYN21JQV9" Location="VL.Stride.Runtime" Version="2021.4.0-proxies-0090-g6fce957940" />
 </Document>
